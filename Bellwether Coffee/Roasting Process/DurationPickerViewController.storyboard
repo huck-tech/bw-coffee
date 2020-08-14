@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eWc-af-kFX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Duration Picker View Controller-->
+        <scene sceneID="CvD-uB-Fqq">
+            <objects>
+                <viewController storyboardIdentifier="DurationPickerViewController" modalPresentationStyle="overCurrentContext" id="eWc-af-kFX" customClass="DurationPickerViewController" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A1S-MZ-mRS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4WP-SJ-t8z">
+                                <rect key="frame" x="150" y="189.5" width="75" height="288"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyF-Al-nyM">
+                                        <rect key="frame" x="0.0" y="36" width="75" height="216"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDI-LA-I75">
+                                        <rect key="frame" x="0.0" y="252" width="75" height="36"/>
+                                        <color key="backgroundColor" red="0.47058823529999999" green="0.46274509800000002" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Select">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectWithSender:" destination="eWc-af-kFX" eventType="touchUpInside" id="i4b-bn-w5l"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Roast Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Duh-5h-mPK">
+                                        <rect key="frame" x="8" y="0.0" width="59" height="36"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Duh-5h-mPK" secondAttribute="trailing" constant="8" id="7F0-h6-1K9"/>
+                                    <constraint firstAttribute="bottom" secondItem="cDI-LA-I75" secondAttribute="bottom" id="9HJ-Ns-8cm"/>
+                                    <constraint firstItem="KyF-Al-nyM" firstAttribute="leading" secondItem="4WP-SJ-t8z" secondAttribute="leading" id="PUN-el-3Cy"/>
+                                    <constraint firstItem="Duh-5h-mPK" firstAttribute="leading" secondItem="4WP-SJ-t8z" secondAttribute="leading" constant="8" id="ags-hg-9sM"/>
+                                    <constraint firstItem="cDI-LA-I75" firstAttribute="top" secondItem="KyF-Al-nyM" secondAttribute="bottom" id="ji8-oY-NZl"/>
+                                    <constraint firstItem="KyF-Al-nyM" firstAttribute="top" secondItem="Duh-5h-mPK" secondAttribute="bottom" id="mUJ-Aj-g7w"/>
+                                    <constraint firstItem="Duh-5h-mPK" firstAttribute="top" secondItem="4WP-SJ-t8z" secondAttribute="top" id="okZ-tq-ptK"/>
+                                    <constraint firstItem="Duh-5h-mPK" firstAttribute="top" secondItem="4WP-SJ-t8z" secondAttribute="top" id="q9c-bD-V58"/>
+                                    <constraint firstAttribute="trailing" secondItem="cDI-LA-I75" secondAttribute="trailing" id="rzI-4f-Ez3"/>
+                                    <constraint firstItem="cDI-LA-I75" firstAttribute="leading" secondItem="4WP-SJ-t8z" secondAttribute="leading" id="st1-mT-6Io"/>
+                                    <constraint firstAttribute="trailing" secondItem="KyF-Al-nyM" secondAttribute="trailing" id="udt-zZ-TRX"/>
+                                    <constraint firstItem="Duh-5h-mPK" firstAttribute="height" secondItem="cDI-LA-I75" secondAttribute="height" id="umc-GJ-h46"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKg-wd-4qL">
+                                <rect key="frame" x="304" y="75" width="51" height="34"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelWith_sender:" destination="eWc-af-kFX" eventType="touchUpInside" id="Ufi-p7-VhE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4WP-SJ-t8z" firstAttribute="centerY" secondItem="A1S-MZ-mRS" secondAttribute="centerY" id="2P1-6L-fVY"/>
+                            <constraint firstItem="KKg-wd-4qL" firstAttribute="top" secondItem="ZEM-Pi-pMG" secondAttribute="top" constant="55" id="7LZ-JO-IQY"/>
+                            <constraint firstItem="4WP-SJ-t8z" firstAttribute="centerX" secondItem="A1S-MZ-mRS" secondAttribute="centerX" id="GpP-mn-MgI"/>
+                            <constraint firstItem="4WP-SJ-t8z" firstAttribute="width" secondItem="A1S-MZ-mRS" secondAttribute="width" multiplier="1:5" id="bLL-0Z-N6j"/>
+                            <constraint firstItem="ZEM-Pi-pMG" firstAttribute="trailing" secondItem="KKg-wd-4qL" secondAttribute="trailing" constant="20" id="gnL-kb-9LB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZEM-Pi-pMG"/>
+                    </view>
+                    <connections>
+                        <outlet property="timeBox" destination="4WP-SJ-t8z" id="yFr-2R-Bnf"/>
+                        <outlet property="timePicker" destination="KyF-Al-nyM" id="zId-wb-qGe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLh-tc-qEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3150" y="1240.625"/>
+        </scene>
+    </scenes>
+</document>

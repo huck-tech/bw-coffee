@@ -1,0 +1,20 @@
+[
+  {
+    "image": "onboarding_share",
+    "title": "Roast",
+    "description": "Control your roaster with a couple taps.",
+    "backgroundColor": "FF6A6A"
+  },
+  {
+    "image": "onboarding_share",
+    "title": "Shop",
+    "description": "Order new beans and have them shipped to your doorstep.",
+    "backgroundColor": "50E3C2"
+  },
+  {
+    "image": "onboarding_share",
+    "title": "Share",
+    "description": "Share roast profiles you use to get that perfect formula.",
+    "backgroundColor": "836CFF"
+  }
+]

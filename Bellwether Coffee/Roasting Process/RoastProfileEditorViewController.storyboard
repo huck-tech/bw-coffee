@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--RoastingInformationViewController-->
+        <scene sceneID="UhO-YL-eiq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RoastingProcessViewController" referencedIdentifier="RoastingInformationViewController" id="Mjk-zS-zUC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yF-8z-DLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="119"/>
+        </scene>
+        <!--Roast Profile Editor View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController definesPresentationContext="YES" id="BYZ-38-t0r" customClass="RoastProfileEditorViewController" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuI-6M-iep">
+                                <rect key="frame" x="20" y="75" width="330" height="98"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YuI-6M-iep" secondAttribute="height" multiplier="165:49" id="62x-A8-v9h"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Mjk-zS-zUC" kind="embed" id="NWJ-24-F1G"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DA-Dt-Y5v">
+                                <rect key="frame" x="0.0" y="720" width="1024" height="48"/>
+                                <color key="backgroundColor" red="0.47058823529999999" green="0.46274509800000002" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Save Profile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveProfileWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1X-Dq-8uo"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocf-e6-ynK">
+                                <rect key="frame" x="20" y="181" width="984" height="531"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.4039215686" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="1gI-tV-m7h" kind="embed" id="pgc-wj-1e9"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woZ-qP-SPd">
+                                <rect key="frame" x="953" y="75" width="51" height="34"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tq9-W2-bxq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ocf-e6-ynK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2mt-E1-qnV"/>
+                            <constraint firstItem="0DA-Dt-Y5v" firstAttribute="top" secondItem="ocf-e6-ynK" secondAttribute="bottom" constant="8" id="2y1-Kv-Ckg"/>
+                            <constraint firstAttribute="trailing" secondItem="0DA-Dt-Y5v" secondAttribute="trailing" id="2yb-IV-huU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="woZ-qP-SPd" secondAttribute="trailing" constant="20" id="DhN-0u-15j"/>
+                            <constraint firstItem="0DA-Dt-Y5v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HpK-rU-TVS"/>
+                            <constraint firstItem="woZ-qP-SPd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="IfN-rF-jgD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0DA-Dt-Y5v" secondAttribute="bottom" id="RKY-jX-cvY"/>
+                            <constraint firstItem="YuI-6M-iep" firstAttribute="width" secondItem="YuI-6M-iep" secondAttribute="height" multiplier="165:49" id="UmU-bi-Bfn"/>
+                            <constraint firstItem="0DA-Dt-Y5v" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="48:768" id="bXr-5a-vMh"/>
+                            <constraint firstItem="YuI-6M-iep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g1c-tW-ZHX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ocf-e6-ynK" secondAttribute="trailing" constant="20" id="hnh-ku-581"/>
+                            <constraint firstItem="YuI-6M-iep" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="m06-EM-KN4"/>
+                            <constraint firstItem="YuI-6M-iep" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="55:128" id="oAW-7h-MRK"/>
+                            <constraint firstItem="ocf-e6-ynK" firstAttribute="top" secondItem="YuI-6M-iep" secondAttribute="bottom" constant="8" id="thh-2v-7mF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="graphBox" destination="ocf-e6-ynK" id="Cil-tS-BSx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.77343749999999" y="118.75"/>
+        </scene>
+        <!--BWRoastProfileGraphViewController-->
+        <scene sceneID="CFZ-DT-L80">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BWRoastProfileGraphViewController" id="1gI-tV-m7h" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6s-us-jHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="-36"/>
+        </scene>
+    </scenes>
+</document>

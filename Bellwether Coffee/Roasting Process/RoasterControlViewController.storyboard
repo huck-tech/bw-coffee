@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sEW-cG-i3o">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Roaster Control View Controller-->
+        <scene sceneID="Epa-BP-I8p">
+            <objects>
+                <viewController storyboardIdentifier="RoasterControlViewController" id="sEW-cG-i3o" customClass="RoasterControlViewController" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rs7-bK-wll">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQK-lP-kqY">
+                                <rect key="frame" x="102.5" y="103.5" width="170" height="168"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mQK-lP-kqY" secondAttribute="height" multiplier="179:177" id="lcm-H4-u0h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <state key="normal" title="Preheat">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="preheatTapped:" destination="sEW-cG-i3o" eventType="touchUpInside" id="yU2-tP-Jm3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bellwether_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="yeX-Bn-wbg">
+                                <rect key="frame" x="9.5" y="9.5" width="356.5" height="356.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yeX-Bn-wbg" secondAttribute="height" multiplier="1:1" id="y52-iJ-zie"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mQK-lP-kqY" firstAttribute="centerY" secondItem="rs7-bK-wll" secondAttribute="centerY" id="5x8-YT-rGO"/>
+                            <constraint firstItem="mQK-lP-kqY" firstAttribute="width" secondItem="rs7-bK-wll" secondAttribute="height" multiplier="170:375" id="Gxq-ps-ttC"/>
+                            <constraint firstItem="mQK-lP-kqY" firstAttribute="centerX" secondItem="rs7-bK-wll" secondAttribute="centerX" id="cao-tT-ChG"/>
+                            <constraint firstItem="yeX-Bn-wbg" firstAttribute="width" secondItem="rs7-bK-wll" secondAttribute="height" multiplier="95:100" id="fqo-D8-1C5"/>
+                            <constraint firstItem="yeX-Bn-wbg" firstAttribute="centerY" secondItem="rs7-bK-wll" secondAttribute="centerY" id="lnz-GD-ZHI"/>
+                            <constraint firstItem="yeX-Bn-wbg" firstAttribute="centerX" secondItem="rs7-bK-wll" secondAttribute="centerX" id="n0X-Gv-iOG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZW7-HW-cSw"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="375"/>
+                    <connections>
+                        <outlet property="bellwetherlogo" destination="yeX-Bn-wbg" id="8dP-Kj-Xpw"/>
+                        <outlet property="preheatButton" destination="mQK-lP-kqY" id="S94-8h-1UM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5iP-6d-6bG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bellwether_Logo" width="472" height="472"/>
+    </resources>
+</document>

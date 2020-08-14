@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RUQ-9V-FZA">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Learn More Container View Controller-->
+        <scene sceneID="mNV-Sh-Vja">
+            <objects>
+                <viewController storyboardIdentifier="LearnMoreContainerViewController" id="RUQ-9V-FZA" customClass="LearnMoreContainerViewController" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DWY-Pn-qR8">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asy-pc-3KX">
+                                <rect key="frame" x="-8" y="0.0" width="1032" height="768"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HM3-vA-uK6">
+                                        <rect key="frame" x="8" y="28" width="1032" height="1663"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HM3-vA-uK6" secondAttribute="height" multiplier="1024:1650" id="msC-ke-9mf"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="Hso-nq-Xi0" kind="embed" id="2op-Y8-a5m"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HM3-vA-uK6" firstAttribute="leading" secondItem="asy-pc-3KX" secondAttribute="leadingMargin" id="DsJ-qj-aMr"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="HM3-vA-uK6" secondAttribute="trailing" id="I4P-vv-IUQ"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="HM3-vA-uK6" secondAttribute="bottom" id="KBo-jz-xNa"/>
+                                    <constraint firstItem="HM3-vA-uK6" firstAttribute="top" secondItem="asy-pc-3KX" secondAttribute="topMargin" id="X8K-ru-QfD"/>
+                                    <constraint firstItem="HM3-vA-uK6" firstAttribute="width" secondItem="asy-pc-3KX" secondAttribute="width" id="hPR-qj-UpZ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="RUQ-9V-FZA" id="58K-ja-nbl"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="asy-pc-3KX" firstAttribute="leading" secondItem="RhA-wG-zgL" secondAttribute="leading" constant="-8" id="EqM-X1-KGe"/>
+                            <constraint firstItem="asy-pc-3KX" firstAttribute="top" secondItem="DWY-Pn-qR8" secondAttribute="top" id="bV9-Hd-DGC"/>
+                            <constraint firstItem="asy-pc-3KX" firstAttribute="trailing" secondItem="RhA-wG-zgL" secondAttribute="trailing" id="lSO-mM-XwI"/>
+                            <constraint firstItem="RhA-wG-zgL" firstAttribute="bottom" secondItem="asy-pc-3KX" secondAttribute="bottom" id="qyC-HJ-Qpc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RhA-wG-zgL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="847-CF-3Cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1259" y="116"/>
+        </scene>
+        <!--BeanLearnMoreViewController-->
+        <scene sceneID="AVa-G0-DfL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BeanLearnMoreViewController" id="Hso-nq-Xi0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2P-i2-sLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="116"/>
+        </scene>
+    </scenes>
+</document>

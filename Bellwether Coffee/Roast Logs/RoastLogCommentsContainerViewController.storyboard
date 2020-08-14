@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Nm-FH-oS2">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Roast Log Comments Container View Controller-->
+        <scene sceneID="mTo-1g-Vms">
+            <objects>
+                <viewController id="2Nm-FH-oS2" customClass="RoastLogCommentsContainerViewController" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zaW-6R-uB0">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ok5-rN-RUQ">
+                                <rect key="frame" x="342" y="77" width="341" height="614"/>
+                                <connections>
+                                    <segue destination="Grw-vT-LMo" kind="embed" id="YRZ-Iv-nl9"/>
+                                </connections>
+                            </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x" translatesAutoresizingMaskIntoConstraints="NO" id="29c-Pd-ku1">
+                                <rect key="frame" x="990.5" y="77" width="25.5" height="25.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="29c-Pd-ku1" secondAttribute="height" multiplier="1:1" id="b3E-bJ-vHl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ok5-rN-RUQ" firstAttribute="centerY" secondItem="zaW-6R-uB0" secondAttribute="centerY" id="5VH-uE-w7a"/>
+                            <constraint firstItem="29c-Pd-ku1" firstAttribute="width" secondItem="zaW-6R-uB0" secondAttribute="height" multiplier="1:30" id="ESM-eG-iKK"/>
+                            <constraint firstItem="ok5-rN-RUQ" firstAttribute="width" secondItem="zaW-6R-uB0" secondAttribute="width" multiplier="1:3" id="EX9-bD-rwk"/>
+                            <constraint firstItem="29c-Pd-ku1" firstAttribute="top" secondItem="ok5-rN-RUQ" secondAttribute="top" id="Pbn-zD-81r"/>
+                            <constraint firstItem="wUS-r2-Zcc" firstAttribute="trailing" secondItem="29c-Pd-ku1" secondAttribute="trailing" constant="8" id="Rhe-Ui-EOZ"/>
+                            <constraint firstItem="ok5-rN-RUQ" firstAttribute="centerX" secondItem="zaW-6R-uB0" secondAttribute="centerX" id="VSH-Ha-S8I"/>
+                            <constraint firstItem="ok5-rN-RUQ" firstAttribute="height" secondItem="zaW-6R-uB0" secondAttribute="height" multiplier="8:10" id="YIb-0F-u8X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wUS-r2-Zcc"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeTapper" destination="29c-Pd-ku1" id="oju-uQ-b1x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9D7-gI-pDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="169"/>
+        </scene>
+        <!--Roast Log Comments View Controller-->
+        <scene sceneID="599-di-ikg">
+            <objects>
+                <viewController id="Grw-vT-LMo" customClass="RoastLogCommentsViewController" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dZg-w2-X2S">
+                        <rect key="frame" x="0.0" y="0.0" width="341" height="614"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LbC-dG-5Do"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xXJ-E8-uyS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="222"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="x" width="18" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0HI-ih-8SN">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Roast Profile Graph View Controller-->
+        <scene sceneID="PXk-EH-97X">
+            <objects>
+                <viewController storyboardIdentifier="RoastProfileGraphViewController" id="0HI-ih-8SN" customClass="RoastProfileGraphViewController" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="04i-fG-PN7">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L96-YI-VnG">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <connections>
+                                    <segue destination="QKE-PI-3wb" kind="embed" id="on4-os-wqV"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L96-YI-VnG" firstAttribute="top" secondItem="04i-fG-PN7" secondAttribute="top" id="31K-q5-pcT"/>
+                            <constraint firstItem="L96-YI-VnG" firstAttribute="bottom" secondItem="c52-2G-Uem" secondAttribute="bottom" id="AY5-3X-3dM"/>
+                            <constraint firstItem="L96-YI-VnG" firstAttribute="trailing" secondItem="c52-2G-Uem" secondAttribute="trailing" id="fce-Sy-m9g"/>
+                            <constraint firstItem="L96-YI-VnG" firstAttribute="leading" secondItem="c52-2G-Uem" secondAttribute="leading" id="rKl-ld-GjO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c52-2G-Uem"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZU-P7-ak8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1345" y="2034"/>
+        </scene>
+        <!--BWRoastProfileGraphViewController-->
+        <scene sceneID="LUD-xB-tL9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BWRoastProfileGraphViewController" id="QKE-PI-3wb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sQ-rq-EIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="2034"/>
+        </scene>
+    </scenes>
+</document>

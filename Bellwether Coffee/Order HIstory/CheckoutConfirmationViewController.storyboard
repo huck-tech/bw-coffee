@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GoA-Bx-Dz5">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checkout Confirmation View Controller-->
+        <scene sceneID="mxn-V4-SSf">
+            <objects>
+                <viewController id="GoA-Bx-Dz5" customClass="CheckoutConfirmationViewController" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WZz-hr-weJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mox-ib-iVw">
+                                <rect key="frame" x="144" y="153" width="735" height="461"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckoutConfirmationViewController.png" translatesAutoresizingMaskIntoConstraints="NO" id="K6s-t5-aKu">
+                                        <rect key="frame" x="0.0" y="0.0" width="735" height="461"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="K6s-t5-aKu" secondAttribute="trailing" id="CGy-k3-tXv"/>
+                                    <constraint firstItem="K6s-t5-aKu" firstAttribute="top" secondItem="Mox-ib-iVw" secondAttribute="top" id="Cwh-Sc-JY4"/>
+                                    <constraint firstAttribute="bottom" secondItem="K6s-t5-aKu" secondAttribute="bottom" id="irO-WB-UV7"/>
+                                    <constraint firstItem="K6s-t5-aKu" firstAttribute="leading" secondItem="Mox-ib-iVw" secondAttribute="leading" id="kfu-80-vWl"/>
+                                    <constraint firstAttribute="width" secondItem="Mox-ib-iVw" secondAttribute="height" multiplier="735:461" id="xqA-1X-7Hd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Mox-ib-iVw" firstAttribute="width" secondItem="WZz-hr-weJ" secondAttribute="height" multiplier="245:256" id="DtG-h0-VvP"/>
+                            <constraint firstItem="Mox-ib-iVw" firstAttribute="centerX" secondItem="WZz-hr-weJ" secondAttribute="centerX" id="TQF-nB-f3X"/>
+                            <constraint firstItem="Mox-ib-iVw" firstAttribute="centerY" secondItem="WZz-hr-weJ" secondAttribute="centerY" id="lmD-SL-GkR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vlk-mD-Vuk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ti8-4L-zbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105.46875" y="141.40625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CheckoutConfirmationViewController.png" width="2190" height="1373"/>
+    </resources>
+</document>

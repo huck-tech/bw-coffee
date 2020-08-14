@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AGg-H2-env">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bean Flavor Wheel View Controller-->
+        <scene sceneID="V6w-XP-gVs">
+            <objects>
+                <viewController storyboardIdentifier="BeanFlavorWheelViewController" modalTransitionStyle="crossDissolve" id="AGg-H2-env" customClass="BeanFlavorWheelViewController" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7pM-jI-iHM">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxB-1J-4JA" userLabel="Spacer">
+                                <rect key="frame" x="168" y="80" width="688" height="688"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wxB-1J-4JA" secondAttribute="height" multiplier="1:1" id="tSo-Ea-tIJ"/>
+                                </constraints>
+                            </view>
+                            <imageView alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ie-sh-k78">
+                                <rect key="frame" x="47.5" y="-40.5" width="929" height="929"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5ie-sh-k78" secondAttribute="height" multiplier="1:1" id="8I2-Tm-YN4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ColorWheelBackground" translatesAutoresizingMaskIntoConstraints="NO" id="dAp-co-8Lv">
+                                <rect key="frame" x="47" y="-41" width="929" height="929"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xX9-kg-SkI">
+                                <rect key="frame" x="-193" y="0.0" width="240" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xX9-kg-SkI" secondAttribute="height" multiplier="5:16" id="Nux-fH-f2I"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-Jd-8Nj">
+                                <rect key="frame" x="976.5" y="0.0" width="240" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QGh-Jd-8Nj" secondAttribute="height" multiplier="5:16" id="hQv-oG-UE4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9cB-O3-HWv" firstAttribute="bottom" secondItem="wxB-1J-4JA" secondAttribute="bottom" id="1Du-od-6PK"/>
+                            <constraint firstItem="QGh-Jd-8Nj" firstAttribute="width" secondItem="QGh-Jd-8Nj" secondAttribute="height" multiplier="5:16" id="5rP-Rp-JyU"/>
+                            <constraint firstItem="5ie-sh-k78" firstAttribute="centerX" secondItem="wxB-1J-4JA" secondAttribute="centerX" id="6wq-os-cjx"/>
+                            <constraint firstItem="xX9-kg-SkI" firstAttribute="bottom" secondItem="9cB-O3-HWv" secondAttribute="bottom" id="8XS-UU-iyK"/>
+                            <constraint firstItem="5ie-sh-k78" firstAttribute="centerY" secondItem="wxB-1J-4JA" secondAttribute="centerY" id="CBa-CA-gt5"/>
+                            <constraint firstItem="dAp-co-8Lv" firstAttribute="leading" secondItem="xX9-kg-SkI" secondAttribute="trailing" id="CfG-Kf-qJn"/>
+                            <constraint firstItem="QGh-Jd-8Nj" firstAttribute="leading" secondItem="5ie-sh-k78" secondAttribute="trailing" id="Msw-wd-43Z"/>
+                            <constraint firstItem="5ie-sh-k78" firstAttribute="width" secondItem="wxB-1J-4JA" secondAttribute="height" multiplier="1.35:1" id="OzW-wr-F0U"/>
+                            <constraint firstItem="dAp-co-8Lv" firstAttribute="leading" secondItem="5ie-sh-k78" secondAttribute="leading" id="Sth-6b-Axp"/>
+                            <constraint firstItem="dAp-co-8Lv" firstAttribute="bottom" secondItem="5ie-sh-k78" secondAttribute="bottom" id="gM4-2w-VlB"/>
+                            <constraint firstItem="xX9-kg-SkI" firstAttribute="top" secondItem="7pM-jI-iHM" secondAttribute="top" id="iMj-oa-xMG"/>
+                            <constraint firstItem="dAp-co-8Lv" firstAttribute="top" secondItem="5ie-sh-k78" secondAttribute="top" id="jgO-Bb-tmb"/>
+                            <constraint firstItem="wxB-1J-4JA" firstAttribute="centerX" secondItem="7pM-jI-iHM" secondAttribute="centerX" id="lr7-Wj-B11"/>
+                            <constraint firstItem="QGh-Jd-8Nj" firstAttribute="top" secondItem="7pM-jI-iHM" secondAttribute="top" id="m55-RN-BIr"/>
+                            <constraint firstItem="wxB-1J-4JA" firstAttribute="top" secondItem="9cB-O3-HWv" secondAttribute="top" constant="60" id="mL4-y7-qE1"/>
+                            <constraint firstItem="QGh-Jd-8Nj" firstAttribute="bottom" secondItem="9cB-O3-HWv" secondAttribute="bottom" id="q29-7f-VkK"/>
+                            <constraint firstItem="dAp-co-8Lv" firstAttribute="trailing" secondItem="5ie-sh-k78" secondAttribute="trailing" id="tPu-2p-kTK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9cB-O3-HWv"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="5ie-sh-k78" id="Lgx-fe-O17"/>
+                        <outlet property="foregroundImage" destination="dAp-co-8Lv" id="Mrl-F2-yOY"/>
+                        <outlet property="shader1" destination="xX9-kg-SkI" id="YMH-r0-hsd"/>
+                        <outlet property="shader2" destination="QGh-Jd-8Nj" id="Y3k-lb-ABH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKc-kl-whf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130.078125" y="177.34375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ColorWheelBackground" width="1024" height="768"/>
+    </resources>
+</document>

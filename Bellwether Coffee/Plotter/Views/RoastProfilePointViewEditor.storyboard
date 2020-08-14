@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vvf-3h-Nxu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Roast Profile Point View Editor-->
+        <scene sceneID="n9T-rk-eCQ">
+            <objects>
+                <viewController storyboardIdentifier="RoastProfilePointViewEditor" id="Vvf-3h-Nxu" customClass="RoastProfilePointViewEditor" customModule="Bellwether_Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Z1-N7-tkO">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Popover" translatesAutoresizingMaskIntoConstraints="NO" id="y0b-cv-opj">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-T3-ADO">
+                                <rect key="frame" x="3" y="36" width="144" height="144"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y2H-Ub-4W5">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="70"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KJ9-qk-TQ0">
+                                        <rect key="frame" x="0.0" y="74" width="144" height="70"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="KJ9-qk-TQ0" firstAttribute="height" secondItem="y2H-Ub-4W5" secondAttribute="height" id="8rQ-7O-jIW"/>
+                                    <constraint firstItem="KJ9-qk-TQ0" firstAttribute="width" secondItem="y2H-Ub-4W5" secondAttribute="width" id="Dsh-W1-SJJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="y2H-Ub-4W5" secondAttribute="trailing" id="FAA-Ki-Cyc"/>
+                                    <constraint firstAttribute="bottom" secondItem="KJ9-qk-TQ0" secondAttribute="bottom" id="N4B-WJ-x79"/>
+                                    <constraint firstItem="y2H-Ub-4W5" firstAttribute="top" secondItem="8yX-T3-ADO" secondAttribute="top" id="Sb3-Qo-qlH"/>
+                                    <constraint firstItem="KJ9-qk-TQ0" firstAttribute="leading" secondItem="8yX-T3-ADO" secondAttribute="leading" id="Sja-mT-fEy"/>
+                                    <constraint firstItem="y2H-Ub-4W5" firstAttribute="leading" secondItem="8yX-T3-ADO" secondAttribute="leading" id="T82-Xe-WND"/>
+                                    <constraint firstItem="KJ9-qk-TQ0" firstAttribute="top" secondItem="y2H-Ub-4W5" secondAttribute="bottom" constant="4" id="kJN-yJ-vKW"/>
+                                    <constraint firstAttribute="trailing" secondItem="KJ9-qk-TQ0" secondAttribute="trailing" id="pFT-dk-2M7"/>
+                                    <constraint firstAttribute="width" secondItem="8yX-T3-ADO" secondAttribute="height" multiplier="1:1" id="s5q-dj-ItB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8yX-T3-ADO" firstAttribute="centerX" secondItem="9Z1-N7-tkO" secondAttribute="centerX" id="F71-5e-JIH"/>
+                            <constraint firstItem="y0b-cv-opj" firstAttribute="leading" secondItem="cy4-JI-Xxm" secondAttribute="leading" id="Ra3-Ph-ZeM"/>
+                            <constraint firstItem="y0b-cv-opj" firstAttribute="bottom" secondItem="cy4-JI-Xxm" secondAttribute="bottom" id="apL-gz-j4i"/>
+                            <constraint firstItem="y0b-cv-opj" firstAttribute="top" secondItem="cy4-JI-Xxm" secondAttribute="top" id="brB-pD-Gkr"/>
+                            <constraint firstItem="y0b-cv-opj" firstAttribute="trailing" secondItem="cy4-JI-Xxm" secondAttribute="trailing" id="eAi-pK-Nt9"/>
+                            <constraint firstItem="8yX-T3-ADO" firstAttribute="width" secondItem="9Z1-N7-tkO" secondAttribute="height" multiplier="4.8:6" id="nc0-ld-MhU"/>
+                            <constraint firstItem="cy4-JI-Xxm" firstAttribute="bottom" secondItem="8yX-T3-ADO" secondAttribute="bottom" id="uL3-yf-Npz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cy4-JI-Xxm"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="150" height="180"/>
+                    <connections>
+                        <outlet property="tempLbl" destination="KJ9-qk-TQ0" id="BRK-NX-fFE"/>
+                        <outlet property="timeLbl" destination="y2H-Ub-4W5" id="Cy9-9E-5Zt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uyx-vg-dMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-185.59999999999999" y="123.23838080959521"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Popover" width="50" height="60"/>
+    </resources>
+</document>

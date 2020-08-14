@@ -1,0 +1,629 @@
+/*
+  Localizable.strings
+  Bellwether-iOS
+
+  Created by Iurii Mozharovskyi on 2/24/16.
+  Copyright © 2016 Bellwether. All rights reserved.
+*/
+
+
+DEFAULT_COST_FORMAT = "$%@";
+DEFAULT_WEIGHT_FORMAT = "%@ lbs";
+DEFAULT_TEMPERATURE_FORMAT = "%@ °F";
+DEFAULT_SECONDS_FORMAT = "%2d:%02d";
+SUPPORT_EMAIL = "support@bellwethercoffee.com";
+
+LOGIN_USER_NAME_PLACEHOLDER = "login";
+LOGIN_PASSWORD_PLACEHOLDER = "password";
+LOGIN_LOGIN_BUTTON_TITLE = "Login";
+LOGIN_ERROR_INVALID_EMAIL_OR_PASSWORD = "Invalid login or password";
+LOGIN_ERROR_UNEXPECTED = "Unexpected error";
+LOGIN_ERROR_ACCESS_DENIED = "You don't have permission to access this data. Please contact your account admin";
+
+LOGIN_BELLWETHER_ACCOUNT = "You are trying to login as a user of Bellwether account. This is only allowed on Web Admin Application";
+LOGIN_EMAIL_LOGIN_PIN_BUTTON_TEXT = "Login";
+LOGIN_EMAIL_LOGIN_PIN_LABEL_TEXT = "with PIN instead";
+
+LOGIN_PROGRESS_AUTH = "Authentication...";
+LOGIN_PROGRESS_FETCH_LOCATION_DATA = "Receiving location data...";
+
+
+LOGIN_GUIDANCE_EMAIL = "Enter login and password";
+LOGIN_GUIDANCE_PIN = "Enter the PIN code";
+
+LOGIN_PIN_LOGIN_EMAIL_BUTTON_TEXT = "Login";
+LOGIN_PIN_LOGIN_EMAIL_LABEL_TEXT = "with email and password instead.";
+LOGIN_PIN_DELETE = "Delete";
+LOGIN_PIN_CHOICE_TEXT = "Please create your PIN. You'll use this 4 digit number to log in from now on.";
+LOGIN_PIN_CHOICE_CONFIRM_TEXT = "or enter your PIN one more time...";
+
+LOCATION_SELECT_LOCATION_LABEL_TEXT = "Select your location";
+LOCATION_SELECT_REMEMBER = "Remember me at this location";
+LOCATION_SELECT_DONE = "Done";
+
+ALERT_OK = "OK";
+
+/* Used in navigation bar, menu items*/
+ROASTER_DISCOVERY_TITLE = "Roasters nearby";
+DASHBOARD_TITLE = "Dashboard";
+INVENTORY_TITLE = "Inventory";
+ORDERS_HISTORY_TITLE = "Order history";
+MARKETPLACE_TITLE = "Market";
+CART_TITLE = "Cart";
+ABOUT_TITLE = "About";
+SETTINGS_TITLE = "Settings";
+LOGOUT_TITLE = "Logout";
+ROAST_TITLE = "Roast";
+ROAST_LOG_TITLE = "Roast Log";
+
+FLYOVER_CLOSE = "Close";
+
+// Inventory
+INVENTORY_NOTIFICATION_CONTINUE = "Continue";
+
+INVENTORY_DELIVERED_NOTIFICATION_TOP_TITLE = "You have new deliveries to accept!\n To verify a coffee delivery, click on any tile that looks like this:";
+INVENTORY_DELIVERED_NOTIFICATION_BOTTOM_TITLE = "After clicking on the tile you'll be prompted to move this coffee to\nyour Green inventory.";
+
+INVENTORY_LOW_NOTIFICATION_TOP_TITLE = "You have low inventory levels.\nAnytime you see a red flag on one of your coffee tiles\nit means there is less then 25 lbs of that coffee left.";
+INVENTORY_LOW_NOTIFICATION_BOTTOM_TITLE = "Simply click on the flag to order more!";
+
+
+INVENTORY_MOVE_MESSAGE_FORMAT = "Our records show this coffee has been delivered! If you haven't received this shipment\nyet, send a note to %@ and we'll investigate.";
+INVENTORY_MOVE_QUANTITY_ORDERED = "Quantity ordered:";
+INVENTORY_MOVE_QUANTITY_SHIPPED = "Quantity shipped:";
+INVENTORY_MOVE_ADD_TO_GREEN_INVENTORY = "Add to Green Inventory";
+
+INVENTORY_ON_ORDER_TITLE = "On Order";
+INVENTORY_GREEN_BEANS_TITLE = "Green";
+INVENTORY_ROASTED_TITLE = "Roasted";
+
+INVENTORY_DETAIL_GREEN_INVENTORY = "Green inventory";
+
+INVENTORY_EDIT_AMOUNT_TITLE_GREEN = "Edit Green bean inventory (lbs):";
+INVENTORY_EDIT_AMOUNT_SAVE = "Save";
+
+// Order status
+
+ORDER_STATUS_CONFIRMED = "Confirmed";
+ORDER_STATUS_SHIPPED = "Shipped";
+ORDER_STATUS_DELIVERED = "Delivered";
+ORDER_STATUS_CANCELED = "Canceled";
+ORDER_STATUS_RECEIVED = "Received";
+
+// Order history
+
+ORDER_HISTORY_STATE = "Order State";
+ORDER_HISTORY_DATE = "Date";
+ORDER_HISTORY_ORDER_NUMBER = "Order #";
+ORDER_HISTORY_COFFEE_NAME = "Coffee Name";
+ORDER_HISTORY_ICO_NUMBER = "ICO #";
+ORDER_HISTORY_QUANTITY = "QTY (lbs)";
+ORDER_HISTORY_PRICE_LB = "Price / lb";
+ORDER_HISTORY_ORDER_TOTAL = "Order Total";
+
+ORDER_HISTORY_TRACKING_TITLE = "Tracking";
+ORDER_HISTORY_TRACKING_CARRIER = "Carrier:";
+ORDER_HISTORY_TRACKING_SERVICE = "Service:";
+ORDER_HISTORY_TRACKING_DELIVERY_PRICE = "Delivery price:";
+
+ORDER_HISTORY_TRACKING_TRACKING_CODE = "Tracking code:";
+ORDER_HISTORY_TRACKING_STATUS = "Status:";
+ORDER_HISTORY_TRACKING_UPDATE = "Update:";
+ORDER_HISTORY_TRACKING_COMMENT = "Comment:";
+
+ORDER_HISTORY_PLACEHOLDER_TEXT = "You don't have any orders.";
+ORDER_HISTORY_PLACEHOLDER_TEXT_WITH_BUTTON = "Order beans <button>here!</button>";
+
+// Marketplace
+MARKETPLACE_BEAN_INFO_LEARN_MORE = "Learn more";
+MARKETPLACE_BEAN_INFO_FARM_STORY = "Farm story";
+MARKETPLACE_BEAN_INFO_AVAILABLE_ROAST_PROFILES = "Available roast profiles";
+MARKETPLACE_BEAN_INFO_CUPPING_NOTES = "Cupping notes";
+MARKETPLACE_BEAN_INFO_GROWER = "Grower";
+MARKETPLACE_BEAN_INFO_REGION = "Region";
+MARKETPLACE_BEAN_INFO_ALTITUDE = "Elevation";
+MARKETPLACE_BEAN_INFO_PROCESS = "Processes";
+MARKETPLACE_BEAN_INFO_VARIETY = "Variety";
+MARKETPLACE_BEAN_INFO_CERTIFICATION = "Certification";
+MARKETPLACE_BEAN_INFO_LBS_AVAILABLE = "Lbs available";
+MARKETPLACE_BEAN_INFO_PRICE_PER_LB = "Price per lb";
+MARKETPLACE_BEAN_INFO_WHY_LOVE_IT = "Why we love it";
+MARKETPLACE_BEAN_INFO_SOCIAL_IMPACT = "Impact metric";
+MARKETPLACE_BEAN_INFO_PLACEHOLDER_NO_COFFEE_MATCH = "No coffee match";
+MARKETPLACE_BEAN_INFO_PLACEHOLDER_SELECT_A_COFFEE = "Select a coffee";
+
+MARKETPLACE_BEANS_AVAILABLE_AMOUNT_FORMAT = "%@ lbs";
+MARKETPLACE_BEANS_PRICE_FORMAT = "$%@";
+MARKETPLACE_BEANS_SECTION_TITLE_COFFEE_NAME = "Coffee";
+MARKETPLACE_BEANS_SECTION_TITLE_LBS_AVAILABLE = "Lbs available";
+MARKETPLACE_BEANS_SECTION_TITLE_PRICE = "Price / lb";
+
+ERROR_AWS_UNEXPECTED_RESPONSE = "Unexpected server response";
+ERROR_MARKETPLACE_RETRY = "Retry";
+
+BEAN_CERTIFICATION1_TYPE_ORGANIC = "Organic";
+BEAN_CERTIFICATION1_TYPE_FAIR_TRADE = "Fair Trade";
+BEAN_CERTIFICATION1_TYPE_BIODYNAMIC = "Biodynamic";
+BEAN_CERTIFICATION1_TYPE_RAINFOREST_ALLIANCE = "Rainforest Alliance";
+
+BEAN_CERTIFICATION2_TYPE_CONVENTIONAL = "Conventional";
+BEAN_CERTIFICATION2_TYPE_BIRD_FRIENDLY = "Bird Friendly";
+BEAN_CERTIFICATION2_TYPE_UTZ_CERTIFIED= "Utz Certified";
+BEAN_CERTIFICATION2_TYPE_BCORP = "B-Corp";
+
+BEAN_ROAST_TYPE_LIGHT = "Light";
+BEAN_ROAST_TYPE_MEDIUM = "Medium";
+BEAN_ROAST_TYPE_DARK = "Dark";
+BEAN_ROAST_TYPE_ESPRESSO = "Espresso";
+BEAN_ROAST_TYPE_COLD_BREW = "Cold Brew";
+BEAN_ROAST_TYPE_BLEND = "Blend";
+BEAN_ROAST_TYPE_DECAF = "Decaf";
+
+BEAN_ALTITUDE_FORMAT = "%.0f meters";
+
+MARKETPLACE_FILTERS_APPLY_FILTERS = "Apply Filters";
+
+MARKETPLACE_PROMOTION_TITLE = "Featured Coffee:";
+
+ORIGIN_AREA_AFRICA = "Africa";
+ORIGIN_AREA_CENTRAL_AMERICA = "Central America";
+ORIGIN_AREA_SOUTH_AMERICA = "South America";
+ORIGIN_AREA_NORTH_AMERICA = "North America";
+ORIGIN_AREA_PACIFIC_OCEANIA = "Pacific / Oceania";
+
+CART_NOTE = "Note: Please allow 1–2 business days for processing. Availability of coffees in cart is not guaranteed until checkout is complete.";
+CART_CHECKOUT_BUTTON_TITLE = "Checkout";
+CART_LOCATION_LABEL = "Location";
+CART_COFFEE_LABEL = "Coffee";
+CART_ICO_NUMBER_LABEL = "ICO number";
+CART_PRICE_LABEL = "Price / lb";
+CART_AMOUNT_LABEL = "Amount (lbs)";
+CART_SUBTOTAL_LABEL = "Cart Subtotal";
+CART_TOTAL_LABEL = "Total";
+CART_TOTAL_COST_FORMAT = "$%@";
+CART_CONTINUE_SHOPPING = "Continue Shopping";
+CART_ITEM_ADD_TO_CART = "+ Add to Cart";
+CART_ITEM_UPDATE_CART = "Update Cart";
+CART_ITEM_REMOVE_FROM_CART = "✕ Remove from Cart";
+CART_ITEM_CLOSE = "Close";
+CART_SELECT_AMOUNT_LABEL = "select lbs";
+CART_EXPIRED = "Cart expired";
+CART_RESTORE = "Restore";
+CART_DELETE = "Delete";
+
+CART_PLACEHOLDER_TEXT = "The cart is empty.";
+CART_PLACEHOLDER_TEXT_WITH_BUTTON = "Order beans <button>here!</button>";
+
+ABOUT_VERSION_FORMAT = "Version %@";
+ABOUT_BUILD_NUMBER_FORMAT = "Build %@";
+ABOUT_BACKEND_CONFIGURATION_FORMAT = "Backend: %@";
+ABOUT_SCAA_LICENCE = "The \"Coffee Taster’s Flavor Wheel\" by SCAA and WCR (©2016) is licensed under";
+ABOUT_SCAA_LICENCE_URL_TITLE = "CC-BY-NC-ND 4.0";
+ABOUT_SCAA_LICENCE_URL = "https://creativecommons.org/licenses/by-nc-nd/4.0/";
+
+CHECKOUT_TITLE = "CHECKOUT";
+CHECKOUT_SHIPPING_INFO = "Shipping Information";
+CHECKOUT_SHIPPING_CUSTOMER_NAME = "Customer Name:";
+CHECKOUT_SHIPPING_COMPANY = "Company:";
+CHECKOUT_SHIPPING_ADDRESS = "Address:";
+CHECKOUT_SHIPPING_PHONE = "Phone:";
+CHECKOUT_SHIPPING_NOTE_TO_SHIPPER = "Note to shipper";
+CHECKOUT_SHIPPING_CONFIRM = "Confirm";
+CHECKOUT_SHIPPING_CONFIRMED = "Confirmed";
+CHECKOUT_SHIPPING_CHANGE_TEXT = "Change Address";
+
+CHECKOUT_SHIPPING_OPTIONS_TITLE = "Shipping options";
+CHECKOUT_SHIPPING_OPTIONS_PLACEHOLDER = "Confirm shipping information to see all available options";
+CHECKOUT_SHIPPING_OPTIONS_NOTE = "Please allow 1–2 business days for processing";
+CHECKOUT_AVAILABILITY_NOTE = "Availability of coffees in cart is not guaranteed until checkout is complete.";
+
+CHECKOUT_SHIPPING_OPTION_FEDEX_FIRST_OVERNIGHT         = "First overnight";
+CHECKOUT_SHIPPING_OPTION_FEDEX_PRIORITY_OVERNIGHT      = "Priority overnight";
+CHECKOUT_SHIPPING_OPTION_FEDEX_STANDARD_OVERNIGHT      = "Standard overnight";
+CHECKOUT_SHIPPING_OPTION_FEDEX_FEDEX_2_DAY_AM          = "FedEx 2 day AM";
+CHECKOUT_SHIPPING_OPTION_FEDEX_FEDEX_2_DAY             = "FedEx 2 day";
+CHECKOUT_SHIPPING_OPTION_FEDEX_FEDEX_EXPRESS_SAVER     = "FedEx express saver";
+CHECKOUT_SHIPPING_OPTION_FEDEX_GROUND_HOME_DELIVERY    = "Ground home delivery";
+CHECKOUT_SHIPPING_OPTION_FEDEX_FEDEX_GROUND            = "FedEx ground";
+CHECKOUT_SHIPPING_OPTION_FEDEX_INTERNATIONAL_ECONOMY   = "International Economy";
+CHECKOUT_SHIPPING_OPTION_FEDEX_INTERNATIONAL_FIRST     = "International First";
+CHECKOUT_SHIPPING_OPTION_FEDEX_INTERNATIONAL_PRIORITY  = "International Priority";
+CHECKOUT_SHIPPING_OPTION_FEDEX_SMART_POST              = "Smart Post";
+CHECKOUT_SHIPPING_OPTION_UPS_GROUND                    = "Ground";
+CHECKOUT_SHIPPING_OPTION_UPS_UPSSTANDARD               = "UPS Standard";
+CHECKOUT_SHIPPING_OPTION_UPS_UPSSAVER                  = "UPS Saver";
+CHECKOUT_SHIPPING_OPTION_UPS_EXPRESS                   = "Express";
+CHECKOUT_SHIPPING_OPTION_UPS_EXPRESSPLUS               = "Express Plus";
+CHECKOUT_SHIPPING_OPTION_UPS_EXPEDITED                 = "Expedited";
+CHECKOUT_SHIPPING_OPTION_UPS_NEXTDAYAIR                = "Next Day Air";
+CHECKOUT_SHIPPING_OPTION_UPS_NEXTDAYAIRSAVER           = "Next Day Air Saver";
+CHECKOUT_SHIPPING_OPTION_UPS_NEXTDAYAIREARLYAM         = "Next Day Air Early AM";
+CHECKOUT_SHIPPING_OPTION_UPS_2NDDAYAIR                 = "2nd Day Air";
+CHECKOUT_SHIPPING_OPTION_UPS_2NDDAYAIRAM               = "2nd Day Air AM";
+CHECKOUT_SHIPPING_OPTION_UPS_3DAYSELECT                = "3 Day Select";
+CHECKOUT_SHIPPING_OPTION_BELLWETHER_BELLWETHER_PICKUP  = "Bellwether Pickup";
+CHECKOUT_SHIPPING_OPTION_BELLWETHER_BELLWETHER_CUSTOM  = "Bellwether Negotiated";
+
+
+CHECKOUT_DISCOUNT_TITLE = "Discount code";
+
+CHECKOUT_SELECT_PAYMENT_OPTION = "CHECKOUT";
+
+CHECKOUT_SUMMARY_TITLE = "Order Summary";
+CHECKOUT_SUMMARY_COST_FORMAT = "$%@";
+
+CHECKOUT_PAYMENT_INFO = "Payment information";
+CHECKOUT_PAYMENT_CREDIT_CARD = "Credit Card:";
+CHECKOUT_PAYMENT_BILLING_ADDRESS = "Billing Address:";
+CHECKOUT_PAYMENT_PAYMENT_OPTION = "Payment Option";
+CHECKOUT_PAYMENT_PLACE_ORDER = "Place Order";
+
+CHECKOUT_BRAINTREE_SUMMARY_TITLE = "Order";
+CHECKOUT_BRAINTREE_SUMMARY_DESCRIPTION = "Coffee beans order";
+CHECKOUT_BRAINTREE_CONFIRM_BUTTON_TITLE = "Confirm Payment Option";
+
+CHECKOUT_ORDER_PLACED_MESSAGE = "Thank you! Your order has been placed. \nYou'll receive an order confirmation email shortly.\nPlease allow 1-2 business days for processing.";
+CHECKOUT_ORDER_QUESTIONS_MESSAGE = "Questions or concerns?";
+CHECKOUT_ORDER_SUPPORT_MESSAGE = "Send us a note: ";
+CHECKOUT_ORDER_PLACED_CONTINUE = "Continue";
+
+CHECKOUT_NO_EMAIL_ACCOUNT = "No email accout was set up on this iPad";
+
+LOCATIONS_MANAGEMENT_TITLE = "CREATE A LOCATION";
+
+LOCATION_CREATION_TITLE = "Location Name";
+LOCATIONS_LOCATION_NAME = "Location Name";
+LOCATIONS_ADDRESS = "Address";
+LOCATIONS_CONTACT_INFO = "Contact Info";
+LOCATIONS_MAIN_CONTACT = "Main Contact";
+LOCATIONS_EDIT = "Edit";
+LOCATIONS_ADD_NEW = "+ Add New";
+LOCATIONS_LIST_CANT_CLOSE_CURRENT_LOCATION = "Can't close current location";
+
+LOCATIONS_EDIT_SAVE = "Save";
+
+LOCATIONS_EDIT_LOCATION_FORM_TITLE = "Location Information";
+LOCATIONS_EDIT_MAIN_CONTACT_FORM_TITLE = "Main Contact";
+LOCATIONS_EDIT_FIELD_TITLE_LOCATION_NAME = "Location Name";
+LOCATIONS_EDIT_FIELD_TITLE_PHONE = "Phone";
+LOCATIONS_EDIT_FIELD_TITLE_EMAIL = "Email";
+LOCATIONS_EDIT_FIELD_TITLE_STREETADDRESS1 = "Street Address";
+LOCATIONS_EDIT_FIELD_TITLE_STREETADDRESS2 = "Street Address";
+LOCATIONS_EDIT_FIELD_TITLE_CITY = "City";
+LOCATIONS_EDIT_FIELD_TITLE_STATE = "State";
+LOCATIONS_EDIT_FIELD_TITLE_ZIP = "Zip Code";
+LOCATIONS_EDIT_FIELD_TITLE_MAIN_CONTACT_FIRSTNAME = "First Name";
+LOCATIONS_EDIT_FIELD_TITLE_MAIN_CONTACT_LASTNAME = "Last Name";
+
+LOCATIONS_EDIT_VALIDATION_FAILED_ERROR_TITLE = "Address validation failed";
+LOCATIONS_EDIT_VALIDATION_FAILED_ERROR_MESSAGE = "Location address will be used as delivery address, and it seems to be not valid. If you are doulbe sure that you've entered an existing commercial address, you might skip the validation.";
+LOCATIONS_EDIT_VALIDATION_FAILED_ERROR_OPTION_SKIP = "Skip validation";
+LOCATIONS_EDIT_VALIDATION_FAILED_ERROR_OPTION_CANCEL = "Cancel";
+
+USER_ROLE_ACCOUNT_ADMIN = "Admin";
+USER_ROLE_ACCOUNT_MASTER_ROASTER = "Master Roaster";
+USER_ROLE_ACCOUNT_BARISTA = "Barista";
+
+USER_PERMISSION_PURCHASE    = "Purchase";
+USER_PERMISSION_AUTO_ROAST  = "Start roast";
+USER_PERMISSION_MAINTENANCE = "Maintenance";
+
+USER_MANAGEMENT_TITLE = "ACCOUNTS";
+USER_LIST_CELL_HEADER_FIRSTNAME = "First Name";
+USER_LIST_CELL_HEADER_LASTNAME = "Last Name";
+USER_LIST_CELL_HEADER_EMAIL = "Email";
+USER_LIST_CELL_HEADER_PHONE = "Phone";
+USER_LIST_CELL_HEADER_USERNAME = "Username";
+USER_LIST_CELL_HEADER_PERMISSION = "Permission";
+USER_LIST_CELL_HEADER_EDIT = "Edit";
+USER_LIST_ADD_NEW = "Add New";
+USER_LIST_CANT_BLOCK_CURRENT_USER = "Can't block current user";
+
+USER_EDIT_PROGRESS_INDICATOR_USER_INFO = "User Information";
+USER_EDIT_PROGRESS_INDICATOR_PICTURE = "Upload Picture";
+USER_EDIT_PROGRESS_INDICATOR_PERMISSIONS = "Add Permissions";
+
+USER_EDIT_FIELD_ERROR_EMPTY = "This field must not be empty";
+USER_EDIT_FIELD_ERROR_NONUNIQUE_NAME = "The name entered must be unique";
+USER_EDIT_FIELD_ERROR_EMAIL_INVALID = "Email is invalid";
+USER_EDIT_FIELD_ERROR_USERNAME_INVALID = "Username must be 5-30 characters length. It can only contain lowercase symbols, digits, special symbols of _.@-";
+USER_EDIT_FIELD_ERROR_NUMBER_OUT_OF_RANGE = "Number should be in range from %d to %d";
+
+USER_EDIT_FIELD_TITLE_FIRST_NAME = "First Name:";
+USER_EDIT_FIELD_TITLE_LAST_NAME = "Last Name:";
+USER_EDIT_FIELD_TITLE_EMAIL = "Email:";
+USER_EDIT_FIELD_TITLE_PHONE = "Phone:";
+USER_EDIT_FIELD_TITLE_USERNAME = "Username:";
+USER_EDIT_FIELD_TITLE_PERMISSION_LEVEL = "Permission Level:";
+USER_EDIT_FIELD_TITLE_PERMISSION_PLACEHOLDER = "Select One";
+USER_EDIT_FIELD_TITLE_RESET_PASSWORD = "Password:";
+USER_EDIT_FIELD_PLACEHOLDER_RESET_PASSWORD = "reset password";
+
+USER_EDIT_RESET_PASSWORD_COMPLETE_TITLE = "Password was reset";
+USER_EDIT_RESET_PASSWORD_COMPLETE_MESSAGE = "User will receive an email with new password.";
+
+USER_EDIT_UPLOAD_PICTURE = "Upload Picture";
+USER_EDIT_ADD_PHOTO = "Add photo";
+USER_EDIT_TAKE_PHOTO = "Take photo";
+
+USER_EDIT_SAVE_BUTTON = "Save";
+USER_EDIT_FINNISH_BUTTON = "Finnish";
+
+SETTINGS_USER_MANAGEMENT = "Accounts";
+SETTINGS_SELF_USER_INFO = "My info";
+SETTINGS_PIN = "Pin";
+SETTINGS_LOCATIONS_MANAGEMENT = "Locations";
+SETTINGS_LOCATION = "Selected location";
+SETTINGS_CHANGE_PASSWORD = "Change password";
+SETTINGS_CHANGE_PASSWORD_HEADER = "Password";
+
+SETTINGS_ENABLE_PIN_LOGIN = "Enable pin login";
+SETTINGS_APPLY = "Apply";
+
+SETTINGS_PASSWORD_OLD = "Old password:";
+SETTINGS_PASSWORD_NEW = "New password:";
+SETTINGS_PASSWORD_NEW_REPEAT = "Repeat new password:";
+SETTINGS_PASSWORD_CANCEL = "Cancel";
+SETTINGS_PASSWORD_SUBMIT = "Submit";
+SETTINGS_PASSWORD_SUCCESS = "Password was changed";
+
+PASSWORD_VALIDATION_HINT = "Password length should be 8-20. Only digits, letters, symbols [@#$%] are allowed. Password must contain uppercase, lowercase, digits and an least one symbol simultaneously.";
+PASSWORD_VALICATION_TOO_SHORT   = "Password is too short";
+PASSWORD_VALICATION_TOO_LONG    = "Password is too long";
+PASSWORD_VALICATION_INVALID     = "Password is not val≥id";
+PASSWORD_VALICATION_PASSWORDS_NOT_MATCH = "Repeated password is not equal to password";
+PASSWORD_VALICATION_OLD_PASSWORD_EMPTY = "Old password is empty";
+PASSWORD_VALICATION_NEW_PASSWORD_EMPTY = "New password is empty";
+PASSWORD_VALICATION_REPEATED_PASSWORD_EMPTY = "Repeated password password is empty";
+
+INVENTORY_ON_ORDER_TITLE = "On Order";
+INVENTORY_GREEN_BEANS_TITLE = "Green";
+INVENTORY_ROASTED_TITLE = "Roasted";
+
+INVENTORY_ON_ORDER_NO_ITEMS_TEXT = "You don't have anything on order.";
+INVENTORY_ON_ORDER_NO_ITEMS_TEXT_WITH_BUTTON = "Order beans <button>here!</button>";
+
+INVENTORY_GREEN_NO_ITEMS_TEXT = "You don't have any green inventory.";
+INVENTORY_GREEN_NO_ITEMS_TEXT_WITH_BUTTON = "Order beans <button>here!</button>";
+
+INVENTORY_ROASTED_NO_ITEMS_TEXT = "You don't have any roasted inventory.";
+INVENTORY_ROASTED_NO_ITEMS_TEXT_WITH_BUTTON = "Roast beans <button>here!</button>";
+
+
+// Roaster
+ROASTER_DEVICE_SECTION = "Roaster Info";
+ROASTER_SERVICES_SECTION = "Services";
+
+ROASTER_UNKNOWN_DEVICE = "Unknown device";
+
+SERVICE_NAME_DEVICE_INFO = "Device information";
+SERVICE_NAME_INITIALIZATION = "Initialization";
+SERVICE_NAME_NETWORK = "Network status";
+SERVICE_NAME_SELF_TEST = "Self-test";
+SERVICE_NAME_START_ROAST = "Start roast";
+
+ROAST_PROFILE_EDITING_DELETE_KEYPOINT = "Delete";
+
+// Browse Roast profiles
+ROAST_PROFILE_BROWSE_CREATE_PROFILE = "Create new";
+ROAST_PROFILE_BROWSE_EDIT_PROFILE = "Edit";
+ROAST_PROFILE_BROWSE_DELETE_PROFILE = "Delete";
+ROAST_PROFILE_BROWSE_DUPLICATE_PROFILE = "Duplicate";
+ROAST_PROFILE_BROWSE_COPYTO_PROFILE = "Copy To...";
+ROAST_PROFILE_BROWSE_DELETE_PROFILE_CONFIRMATION_TITLE = "Delete profile?";
+ROAST_PROFILE_BROWSE_DELETE_PROFILE_CONFIRMATION_MESSAGE = "This will completelly delete profile from server. This action cannot be undone.";
+ROAST_PROFILE_BROWSE_DELETE_PROFILE_CANCEL = "Cancel";
+
+ROAST_PROFILE_CREATE_SELECT_STYLE_TITLE = "Select style";
+ROAST_PROFILE_CREATE_SELECT_STYLE_MESSAGE = "Appropriate predefined template will be selected";
+
+ROAST_PROFILE_COPY_TARGET_SELECTION_TITLE = "Choose The Destination Green Bean";
+ROAST_PROFILE_COPY_NAME_MESSAGE = "Name the Copied Profile";
+
+ROAST_PROFILE_DUPLICATE_RENAME_MESSAGE = "Name the Duplicate Profile";
+ROAST_PROFILE_DUPLICATE_CANCEL = "Cancel";
+
+ROAST_PROFILE_EDIT_SCREEN_START_ROAST_TITLE = "Prepare Roast";
+ROAST_PROFILE_EDIT_SCREEN_EDIT_TITLE = "Edit";
+ROAST_PROFILE_EDIT_SCREEN_CREATE_TITLE = "Create";
+ROAST_PROFILE_EDIT_NAME_FIELD_TITLE = "Name:";
+ROAST_PROFILE_EDIT_STYLE_FIELD_TITLE = "Style:";
+ROAST_PROFILE_EDIT_DURATION_FIELD_TITLE = "Duration:";
+ROAST_PROFILE_EDIT_5_MIN_FIELD_TITLE = "5 min:";
+ROAST_PROFILE_EDIT_8_MIN_FIELD_TITLE = "8 min:";
+ROAST_PROFILE_EDIT_5_MIN_FIELD_PLACEHOLDER = "Temperature at 5 minutes";
+ROAST_PROFILE_EDIT_8_MIN_FIELD_PLACEHOLDER = "Temperature at 8 minutes";
+
+ROAST_PROFILE_EDIT_FIRST_CRACK_HUMIDITY  = "1st crack humidity change:";
+ROAST_PROFILE_EDIT_FIRST_CRACK_RANGE_MIN = "1st crack range from:     ";
+ROAST_PROFILE_EDIT_FIRST_CRACK_RANGE_MAX = "1st crack range to:       ";
+
+ROAST_PROFILE_EDIT_FIRST_CRACK_RANGE_INVALID_ERROR = "1st crack detection range invalid: %@ > %@";
+ROAST_PROFILE_EDIT_FIRST_CRACK_RANGE_TOO_LARGE_ERROR = "1st crack detection range is larger than roast profile duration";
+
+ROAST_PROFILE_EDIT_FIRST_CRACK_PLACEHOLDER = "--";
+ROAST_PROFILE_EDIT_FIRST_CRACK_RANGE_MIN_PLACEHOLDER = "--";
+ROAST_PROFILE_EDIT_FIRST_CRACK_RANGE_MAX_PLACEHOLDER = "--";
+
+ROAST_PROFILE_INVALID_ALERT_TITLE = "Roast profile is invalid";
+ROAST_PROFILE_INVALID_ALERT_MESSAGE = "Roast profile contains time and/or temperature out of resonable range. Should it be corrected?";
+ROAST_PROFILE_INVALID_ALERT_VALIDATE_ACTION = "Trim invalid values";
+ROAST_PROFILE_INVALID_ALERT_CANCEL_ACTION = "Keep as is";
+
+
+// Roasting Wizard
+ROAST_SELECT_BEAN_WEIGHT = "Select bean weight to roast:";
+ROAST_SELECT_BEAN_WEIGHT_PLACEHOLDER = "#.# lbs";
+ROAST_SELECT_BEAN_WEIGHT_NEXT_STEP = "Next Step";
+
+ROAST_CONFIRMATION_MESSAGE = "%@ lbs of %@ is ready to be roasted in %@ profile";
+
+
+ROAST_BEAN_PROFILE_NAME_TITLE = "Profile:";
+ROAST_CANCEL_BUTTON_TITLE = "Stop Roast";
+
+ROAST_PREHEAT_MESSAGE = "Preheating roaster...";
+ROAST_PREHEAT_FORCE_DROP_BUTTON_TITLE = "Drop beans";
+ROAST_PREHEAT_CANCEL_BUTTON_TITLE = "Cancel";
+
+ROAST_COOLING_MESSAGE = "Cooling...";
+
+ROAST_PROFILE_TOO_MANY_STEPS_ERROR = "Roast profile has %d steps while roaster supports only %d";
+
+ROAST_SUMMARY_TITLE_START_WEIGHT = "Start weight:";
+ROAST_SUMMARY_TITLE_END_WEIGHT = "End weight:";
+ROAST_SUMMARY_TITLE_CHARGE_TEMPERATURE = "Charge temp:";
+ROAST_SUMMARY_TITLE_MINUTES_5_TEMPERATURE = "5 minutes:";
+ROAST_SUMMARY_TITLE_MINUTES_8_TEMPERATURE = "8 minutes:";
+ROAST_SUMMARY_TITLE_1ST_CRACK = "1st crack:";
+ROAST_SUMMARY_TITLE_END_TEMPERATURE = "End temp:";
+ROAST_SUMMARY_TITLE_DROPTIME = "Drop time:";
+
+ROAST_SUMMARY_WEIGHT_PLACEHOLDER = "#.## lbs";
+ROAST_SUMMARY_TIME_PLACEHOLDER = "MM:SS";
+ROAST_SUMMARY_TEMP_PLACEHOLDER = "###°F";
+ROAST_SUMMARY_HUMIDITY_PLACEHOLDER = "##.##%";
+
+ROAST_SELECT_ROASTED_BEAN_WEIGHT = "Weigh the roasted beans and enter amount";
+ROAST_SELECT_ROASTED_BEAN_WEIGHT_NEXT_STEP = "Save";
+
+ROAST_LOG_SECTION_HEADER_DATE = "Date";
+ROAST_LOG_SECTION_HEADER_BEANTITLE = "Coffee & Profile";
+ROAST_LOG_SECTION_HEADER_PROFILE_NAME = "Profile Name";
+ROAST_LOG_SECTION_HEADER_ROASTTYPE = "Roast";
+ROAST_LOG_SECTION_HEADER_STARTWEIGHT = "Green";
+ROAST_LOG_SECTION_HEADER_CHARGETEMPERATURE = "Charge";
+ROAST_LOG_SECTION_HEADER_MIN5TEMPERATURE = "5 min";
+ROAST_LOG_SECTION_HEADER_MIN8TEMPERATURE = "8 min";
+ROAST_LOG_SECTION_HEADER_FIRSTCRACKTEMPERATURE = "1st Crack";
+ROAST_LOG_SECTION_HEADER_DROPTIME = "Drop";
+ROAST_LOG_SECTION_HEADER_ENDTEMPERATUREWEIGHT = "End Temp & Weight";
+
+ROAST_FORCE_DROP_ERROR_WRONG_STATE = "Roasting can only be force started when roaster is in preheat state.";
+
+ROAST_POLLING_ERROR_TITLE = "Roaster polling error";
+ROAST_POLLING_ERROR_ACTION_SKIP = "Skip";
+ROAST_POLLING_ERROR_ACTION_SKIP_ALL = "Skip all";
+ROAST_POLLING_ERROR_ACTION_CANCEL_ROAST = "Cancel roast";
+
+ROAST_ROASTER_READY_TITLE = "Ready to roast";
+ROAST_ROASTER_READY_MESSAGE = "Please push the lever on the roaster device to release the beans into the chamber and start the roast. This message will be closed automatically.";
+
+ROASTER_ERROR_NO_SN_SETUP = "Roaster serial number is 'NO-SN-SETUP', e.g. it is not configured on factory to be used. Please run cd /bw_apps/scripts/; ./fullrun.sh --RESET -sn=YOUR_SERIAL_NUMBER command on RPi.";
+
+ROAST_MAINTENANCE_REMINDER_TITLE = "Maintenance Reminder";
+ROAST_MAINTENANCE_REMINDER_CLEAN_CHAFF_CAN = "Please clean the chaff can.";
+ROAST_MAINTENANCE_REMINDER_CONFIRM_BUTTON = "Got it";
+
+SCA_C1_ROASTED = "Roasted";
+SCA_C1_SPICES = "Spices";
+SCA_C1_NUTTY_COCOA = "Nutty Cocoa";
+SCA_C1_SWEET = "Sweet";
+SCA_C1_FLORAL = "Floral";
+SCA_C1_FRUITY = "Fruity";
+SCA_C1_SOUR_FERMENTED = "Sour Fermented";
+SCA_C1_GREEN_VEGETATIVE = "Green Vegetative";
+SCA_C1_OTHER = "Other";
+
+SCA_C2_PIPE_TOBACCO = "Pipe Tobacco";
+SCA_C2_TOBACCO = "Tobacco";
+SCA_C2_BURNT = "Burnt";
+SCA_C2_CEREAL = "Cereal";
+SCA_C2_PUNGENT = "Pungent";
+SCA_C2_PEPPER = "Pepper";
+SCA_C2_BROWN_SPICE = "Brown Spice";
+SCA_C2_NUTTY = "Nutty";
+SCA_C2_COCOA = "Cocoa";
+SCA_C2_BROWN_SUGAR = "Brown Sugar";
+SCA_C2_VANILLA = "Vanilla";
+SCA_C2_VANILLIN = "Vanillin";
+SCA_C2_OVERALL_SWEET = "Overall Sweet";
+SCA_C2_SWEET_AROMATICS = "Sweet Aromatics";
+SCA_C2_BLACK_TEA = "Black Tea";
+SCA_C2_FLORAL = "Floral";
+SCA_C2_BERRY = "Berry";
+SCA_C2_DRIED_FRUIT = "Dried Fruit";
+SCA_C2_OTHER_FRUIT = "Other Fruit";
+SCA_C2_CITRUS_FRUIT = "Citrus Fruit";
+SCA_C2_SOUR = "Sour";
+SCA_C2_ALCOHOL_FERMENTED = "Alcohol Fermented";
+SCA_C2_OLIVE_OIL = "Olive Oil";
+SCA_C2_RAW = "Raw";
+SCA_C2_GREEN_VEGETATIVE = "Green Vegetative";
+SCA_C2_BEANY = "Beany";
+SCA_C2_PAPERY_MUSTY = "Papery Musty";
+SCA_C2_CHEMICAL = "Chemical";
+
+SCA_C3_ACRID = "Acrid";
+SCA_C3_ASHY = "Ashy";
+SCA_C3_SMOKY = "Smoky";
+SCA_C3_BROWN_ROAST = "Brown Roast";
+SCA_C3_GRAIN = "Grain";
+SCA_C3_MALT = "Malt";
+SCA_C3_ANISE = "Anise";
+SCA_C3_NUTMEG = "Nutmeg";
+SCA_C3_CINNAMON = "Cinnamon";
+SCA_C3_CLOVE = "Clove";
+SCA_C3_PEANUTS = "Peanuts";
+SCA_C3_HAZELNUT = "Hazelnut";
+SCA_C3_ALMOND = "Almond";
+SCA_C3_CHOCOLATE = "Chocolate";
+SCA_C3_DARK_CHOCOLATE = "Dark Chocolate";
+SCA_C3_MOLASSES = "Molasses";
+SCA_C3_MAPLE_SYRUP = "Maple Syrup";
+SCA_C3_CARAMELIZED = "Caramelized";
+SCA_C3_HONEY = "Honey";
+SCA_C3_CHAMOMILE = "Chamomile";
+SCA_C3_ROSE = "Rose";
+SCA_C3_JASMINE = "Jasmine";
+SCA_C3_BLACKBERRY = "Blackberry";
+SCA_C3_RASPBERRY = "Raspberry";
+SCA_C3_BLUEBERRY = "Blueberry";
+SCA_C3_STRAWBERRY = "Strawberry";
+SCA_C3_RAISIN = "Raisin";
+SCA_C3_PRUNE = "Prune";
+SCA_C3_COCONUT = "Coconut";
+SCA_C3_CHERRY = "Cherry";
+SCA_C3_POMEGRANATE = "Pomegranate";
+SCA_C3_PINEAPPLE = "Pineapple";
+SCA_C3_GRAPE = "Grape";
+SCA_C3_APPLE = "Apple";
+SCA_C3_PEACH = "Peach";
+SCA_C3_PEAR = "Pear";
+SCA_C3_GRAPEFRUIT = "Grapefruit";
+SCA_C3_ORANGE = "Orange";
+SCA_C3_LEMON = "Lemon";
+SCA_C3_LIME = "Lime";
+SCA_C3_SOUR_AROMATICS = "Sour Aromatics";
+SCA_C3_ACETIC_ACID = "Acetic Acid";
+SCA_C3_BUTYRIC_ACID = "Butyric Acid";
+SCA_C3_ISOVALERIC_ACID = "Isovaleric Acid";
+SCA_C3_CITRIC_ACID = "Citric Acid";
+SCA_C3_MALIC_ACID = "Malic Acid";
+SCA_C3_WINEY = "Winey";
+SCA_C3_WHISKEY = "Whiskey";
+SCA_C3_FERMENTED = "Fermented";
+SCA_C3_OVERRIPE = "Overripe";
+SCA_C3_UNDER_RIPE = "Underripe";
+SCA_C3_PEAPOD = "Peapod";
+SCA_C3_FRESH = "Fresh";
+SCA_C3_DARK_GREEN = "Dark Green";
+SCA_C3_VEGETATIVE = "Vegetative";
+SCA_C3_HAY_LIKE = "Haylike";
+SCA_C3_HERB_LIKE = "Herblike";
+SCA_C3_STALE = "Stale";
+SCA_C3_CARDBOARD = "Cardboard";
+SCA_C3_PAPERY = "Papery";
+SCA_C3_WOODY = "Woody";
+SCA_C3_MOLDY_DAMP = "Moldy Damp";
+SCA_C3_MUSTY_DUSTY = "Musty Dusty";
+SCA_C3_MUSTY_EARTHY = "Musty Earthy";
+SCA_C3_ANIMALIC = "Animalic";
+SCA_C3_MEATY_BROTHY = "Meaty Brothy";
+SCA_C3_PHENOLIC = "Phenolic";
+SCA_C3_BITTER = "Bitter";
+SCA_C3_SALTY = "Salty";
+SCA_C3_MEDICINAL = "Medicinal";
+SCA_C3_PETROLEUM = "Petroleum";
+SCA_C3_SKUNKY = "Skunky";
+SCA_C3_RUBBER = "Rubber";

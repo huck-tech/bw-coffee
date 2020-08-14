@@ -1,0 +1,12 @@
+[
+    {
+        "id": "testId2",
+        "name": "Colombia Cafe de Mujeres",
+        "price": 73.00,
+        "amount": 23.00,
+        "story": "story here",
+        "icoCode": "420",
+        "location": "Colombia, South America",
+        "photo": "coffee_3"
+    }
+]

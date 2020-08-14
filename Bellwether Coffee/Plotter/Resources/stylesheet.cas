@@ -1,0 +1,697 @@
+//
+//  stylesheet.cas
+//  Bellwether-iOS
+//
+//  Created by Vjacheslav Volodko on 15.02.16.
+//  Copyright © 2016 Bellwether. All rights reserved.
+//
+
+@import "colors.cas";
+@import "fonts.cas";
+
+UINavigationBar {
+    tintColor: $color-04;
+    titleTextAttributes: @{
+        font: $font-01;
+        foreground-color: $color-01;
+    }
+    barTintColor: white;
+    translucent: no;
+    titleVerticalPositionAdjustment[barMetrics:Default]: 5;
+}
+
+UITextField {
+    tintColor: $color-04;
+    textColor: $color-07;
+    font: $font-05;
+}
+
+// Labels:
+
+UILabel.title-01 {
+    textColor: $color-01;
+    font: $font-06;
+}
+
+// Subheaders and titles
+UILabel.title-02 {
+    textColor: $color-01;
+    font: $font-02;
+}
+
+// Menu headers and button text
+UILabel.title-03 {
+    textColor: $color-01;
+    font: $font-03;
+}
+
+// Selected menu items, category titles, and “Learn more.”
+UILabel.title-04 {
+    textColor: $color-01;
+    font: $font-04;
+}
+
+// Body
+UILabel.title-05 {
+    textColor: $color-01;
+    font: $font-05;
+}
+
+UILabel.marketFilterOptionsTitle {
+    textColor: white;
+    font: $font-04;
+}
+
+// Buttons:
+
+UIButton {
+    tintColor: $color-02;
+    titleLabel: @{
+        font: $font-03;
+    }
+}
+
+UIButton.green {
+    tintColor: $color-02;
+    titleLabel: @{
+        font: $font-04;
+    }
+    titleColor: $color-02;
+}
+
+UIButton.round-rect, UIButton.login.submit-button, UIButton.round-rect-wide {
+    layer: @{
+        cornerRadius: 15;
+    }
+    backgroundColor[state:disabled]: $color-08;
+    backgroundColor[state:normal]: $color-02;
+    titleColor: $color-10;
+    tintColor: $color-10;
+}
+
+UIButton.round-rect, UIButton.round-rect-destructive {
+    contentEdgeInsets: 0, 15;
+}
+
+UIButton.round-rect-destructive {
+    layer: @{
+        cornerRadius: 15;
+    }
+    backgroundColor[state:disabled]: $color-08;
+    backgroundColor[state:normal]: $color-04;
+    titleColor: $color-10;
+    tintColor: $color-10;
+}
+
+UIButton.round-cart-counter, UIButton.round-inventory-counter {
+    layer: @{
+        cornerRadius: 12;
+    }
+    contentEdgeInsets: 0, 3;
+    textColor: $color-10;
+    tintColor: $color-10;
+    titleLabel: @{
+        font: $font-07;
+    }
+}
+
+UIButton.round-cart-counter {
+    backgroundColor[state:disabled]: $color-08;
+    backgroundColor[state:normal]: $color-02;
+}
+
+UIButton.round-inventory-counter {
+    backgroundColor[state:disabled]: $color-08;
+    backgroundColor[state:normal]: $color-04;
+}
+
+UIButton.destructive {
+    titleColor[state:normal]: $color-04;
+    titleColor[state:disabled]: $color-08;
+}
+
+UIButton.login.submit-button, UIButton.round-rect-wide {
+    contentEdgeInsets: 0, 50;
+}
+
+UIButton.marketFilterOption {
+    titleColor[state:normal]: white;
+    titleColor[state:selected]: $color-02;
+    titleLabel: @{
+        font: $font-04;
+    }
+}
+
+UIButton.marketApplyFilters {
+    titleColor[state:normal]: $color-10;
+    titleColor[state:disabled]: $color-10;
+    titleLabel: @{
+        font: $font-03;
+    }
+    backgroundImage[state:normal]: "ButtonBackground";
+    backgroundImage[state:selected]: "ButtonBackgroundDisabled";
+}
+
+// Progress view:
+
+^UIView.upload-image, ^BWCircleProgressView.upload-image {
+    backgroundColor: $color-09;
+}
+
+^BWCircleProgressView.upload-image {
+    progressTintColor: $color-02;
+    trackTintColor: $color-09;
+    trackLineWidth: 4;
+    radius: 98;
+}
+
+// Containers:
+
+UIView.dialog-container {
+    backgroundColor: $color-09;
+}
+
+^UICollectionViewCell.dashboardCell {
+    layer: @{
+        cornerRadius: 17;
+    }
+    backgroundColor: $color-07;
+
+    UILabel {
+        textColor: white
+    }
+
+}
+
+UICollectionView.dashboard {
+  backgroundColor: white;
+}
+
+// Main menu
+
+UIView.flyoverBackgroundView {
+    backgroundColor: $color-01;
+}
+
+UITableView.mainMenu {
+    backgroundColor: clear;
+}
+
+UILabel.mainMenuCell {
+    font: $font-04;
+    textColor: $color-10;
+    highlightedTextColor: $color-02;
+}
+
+UIView.briefUserInfo {
+    UILabel: {
+        textColor: $color-10;
+    }
+}
+
+UIButton.mainMenu.close {
+
+}
+
+// Login
+
+UITextField.login.userName, UITextField.login.password {
+    tintColor: $color-02;
+    textColor: $color-01;
+    font: $font-02-regular;
+    backgroundColor: $color-09;
+    layer: @{
+        borderWidth: 2;
+        borderColor: $color-02;
+    }
+}
+
+UITextField.login.userName {
+
+}
+
+UITextField.login.password {
+    secureTextEntry: yes;
+}
+
+UIView.loginBackgroundView {
+    backgroundColor: $color-01;
+
+    UILabel {
+        textColor: $color-10;
+    }
+}
+
+^UIButton.loginCircleButton {
+    tintColor: $color-02;
+    titleColor: $color-10
+    titleLabel: @{
+        font: $font-06;
+    }
+}
+
+^UIButton.loginDisplayBlob {
+    tintColor: $color-10;
+}
+
+UIButton.loginDeleteButton {
+    tintColor: $color-10;
+    titleLabel: @{
+        font: $font-02-regular;
+    }
+}
+
+UIButton.loginChangeTypeButton {
+    tintColor: $color-02;
+    titleLabel: @{
+        font: $font-02-regular;
+    }
+}
+
+UILabel.loginChangeTypeLabel {
+    font: $font-02-regular;
+}
+
+UILabel.loginGuidanceViewLabel {
+    font: $font-06;
+}
+
+UIView.loginGuidanceViewLine {
+    backgroundColor: $color-10;
+}
+
+// Market Items:
+
+UIView.marketItemListSectionHeader {
+    backgroundColor: $color-01;
+}
+
+UILabel.marketItemListSectionHeader {
+    textColor: $color-10;
+    font: $font-03;
+}
+
+UIView.marketItemListRow {
+    backgroundColor: $color-09;
+}
+
+// Bean views
+
+UIView.beanBackground {
+    backgroundColor: $color-09;
+}
+
+UIView.colorWheel {
+    backgroundColor: $color-07;
+}
+
+// Checkout
+
+UILabel.checkoutSectionTitle {
+    font: $font-02;
+    textColor: $color-01;
+}
+
+UILabel.checkoutFieldTitle {
+    font: $font-04;
+    textColor: $color-01;
+}
+
+UILabel.checkoutFieldValue {
+    font: $font-05;
+    textColor: $color-07;
+}
+
+UILabel.checkoutNote {
+    font: $font-07;
+    textColor: $color-07;
+}
+
+UITextView.checkoutInput {
+    font: $font-05;
+    textColor: $color-07;
+    backgroundColor: $color-09;
+}
+
+UITextField.checkoutInput {
+    font: $font-05;
+    textColor: $color-07;
+    backgroundColor: $color-09;
+}
+
+UILabel.checkoutAddressConfirmed {
+    font: $font-04;
+    textColor: $color-02;
+}
+
+^UIView.checkoutSummaryCellContentViewEven {
+    backgroundColor: $color-09;
+}
+
+^UIView.checkoutSummaryCellContentViewOdd {
+    backgroundColor: $color-10;
+}
+
+UILabel.checkoutSummaryBeanName {
+    textColor: $color-01;
+    font: $font-02;
+}
+
+UILabel.checkoutSummaryICOCode {
+    font: $font-04;
+    textColor: $color-01;
+}
+
+UILabel.checkoutSummaryPrice {
+    font: $font-04;
+    textColor: $color-01;
+}
+
+UILabel.checkoutSummaryTotal {
+    font: $font-02;
+    textColor: $color-01;
+}
+
+UIButton.checkoutPlaceOrderEnabled {
+    titleColor[state:normal]: $color-10;
+    titleLabel: @{
+        font: $font-03;
+    }
+    backgroundColor: $color-02;
+}
+
+UIButton.checkoutPlaceOrderDisabled {
+    titleColor[state:disabled]: $color-10;
+    titleLabel: @{
+        font: $font-03;
+    }
+    backgroundColor: $color-08;
+}
+
+// Inventory
+
+UIView.inventoryPopupBackgroundView {
+    backgroundColor: $color-09;
+}
+
+UILabel.inventoryNotificationBody {
+    font: $font-09;
+    textColor: $color-01;
+}
+
+UILabel.inventoryMoveBeanName {
+    font: $font-06;
+    textColor: $color-04;
+}
+
+UILabel.inventoryMoveICOCode {
+    font: $font-04;
+    textColor: $color-01;
+}
+
+^UITextView.inventoryMoveMessage {
+    font: $font-05;
+    textColor: $color-01;
+}
+
+UILabel.inventoryMoveRowTitle {
+    font: $font-04;
+    textColor: $color-01;
+}
+
+UILabel.inventoryMoveRowValue{
+    font: $font-05;
+    textColor: $color-01;
+}
+
+UILabel.inventoryDetailBeanTitle {
+    font: $font-02;
+    textColor: $color-04;
+}
+
+// Table row views:
+
+// Header
+
+^UIView.tableRow.header, ^UITableViewCell.tableRow.header, ^UITableViewHeaderFooterView.tableRow.header {
+    > UIView {
+        titleColor: backgroundColor: $color-01;
+    }
+
+    UIButton {
+        titleColor: white
+        titleLabel: @{
+            font: $font-03
+        }
+    }
+
+    UILabel {
+        textColor: white
+        font: $font-03
+    }
+}
+
+^UITableViewCell.tableRow.header, ^UITableViewHeaderFooterView.tableRow.header {
+    contentView: @{
+        backgroundColor: $color-01;
+    }
+}
+
+^UIView.tableRow.header {
+    backgroundColor: $color-01;
+}
+
+// Light and Dart rows:
+
+^UIView.tableRow.dark, ^UITableViewCell.tableRow.dark, ^UITableViewHeaderFooterView.tableRow.dark,
+^UIView.tableRow.light, ^UITableViewCell.tableRow.light, ^UITableViewHeaderFooterView.tableRow.light {
+    UIButton {
+        titleLabel: @{
+            font: $font-03;
+        }
+    }
+    UILabel {
+        font: $font-05;
+    }
+}
+
+// Dark rows:
+
+^UIView.tableRow.dark, ^UITableViewCell.tableRow.dark, ^UITableViewHeaderFooterView.tableRow.dark {
+    > UIView {
+        titleColor: backgroundColor: $color-09;
+    }
+
+    UIButton {
+        titleColor: $color-01;
+    }
+
+    UILabel {
+        textColor: $color-01;
+    }
+}
+
+^UITableViewCell.tableRow.dark, ^UITableViewHeaderFooterView.tableRow.dark {
+    contentView: @{
+        backgroundColor: $color-09;
+    }
+}
+
+^UIView.tableRow.dark {
+    backgroundColor: $color-09;
+}
+
+// Light rows:
+
+^UIView.tableRow.light, ^UITableViewCell.tableRow.light, ^UITableViewHeaderFooterView.tableRow.light {
+    > UIView {
+        titleColor: backgroundColor: $color-10;
+    }
+
+    UIButton {
+        titleColor: $color-01;
+    }
+
+    UILabel {
+        textColor: $color-01;
+    }
+}
+
+^UITableViewCell.tableRow.light, ^UITableViewHeaderFooterView.tableRow.light {
+    contentView: @{
+        backgroundColor: $color-10;
+    }
+}
+
+^UIView.tableRow.light {
+    backgroundColor: $color-10;
+}
+
+UIView.swipeImageView {
+    backgroundColor: $color-10;
+}
+
+
+
+
+// Inventory
+
+UILabel.inventoryTabTitle.selected {
+    textColor: white;
+    font: $font-02;
+}
+
+UILabel.inventoryTabTitle.normal {
+    textColor: $color-01;
+    font: $font-02;
+}
+
+^UIView.inventoryTabHeader.selected {
+    backgroundColor: $color-01;
+}
+
+^UIView.inventoryTabHeader.normal {
+    backgroundColor: white;
+}
+
+UILabel.inventoryTabBadgeImage {
+    textColor: white;
+}
+
+^UIView.inventoryCollectionView.header {
+    backgroundColor: $color-01;
+
+    UILabel {
+        textColor: white;
+        backgroundColor: $color-01;
+        font: $font-02;
+    }
+}
+
+^UIView.inventoryCollectionView.separator {
+    backgroundColor: white;
+}
+
+^UIView.inventoryCollectionView.cell.delivered {
+    backgroundColor: $color-04;
+}
+
+^UIView.inventoryCollectionView.cell.onOrder {
+    backgroundColor: white;
+}
+
+UIView.inventoryCollectionView.cell.bottomView, UIView.inventoryCollectionView.cell.bottomView.delivered {
+    UILabel {
+        textColor: $color-01;
+        font: $font-08;
+    }
+}
+
+UIView.inventoryCollectionView.cell.bottomView {
+    backgroundColor: $color-02;
+}
+
+UIView.inventoryCollectionView.cell.bottomView.delivered {
+    backgroundColor: $color-04;
+}
+
+UILabel.inventoryCollectionView.cell.roastedType {
+    backgroundColor: $color-05;
+    textColor: $color-01;
+    font: $font-04;
+}
+
+UILabel.inventoryCollectionView.cell.address {
+    backgroundColor: $color-03;
+    textColor: $color-01;
+    font: $font-04;
+}
+
+UILabel.inventoryCollectionView.cell.order {
+    backgroundColor: $color-09;
+    textColor: $color-01;
+    font: $font-04;
+}
+
+
+UILabel.inventoryCollectionView.cell.title {
+    backgroundColor: $color-10;
+    textColor: $color-01;
+    font: $font-02;
+}
+
+^UIView.inventory {
+  backgroundColor: $color-01;
+}
+
+UIView.inventoryFilter {
+    backgroundColor: $color-01;
+    UIButton {
+        tintColor: $color-01;
+        titleColor[state:normal]: white;
+        titleColor[state:selected]: $color-04;
+    }
+}
+
+// Edge screen
+
+UIView.edgeScreenBlack {
+    backgroundColor: $color-01;
+}
+
+UILabel.edgeScreenBlack {
+    backgroundColor: $color-01;
+    textColor: $color-10;
+    font: $font-02;
+}
+
+UIButton.edgeScreenBlack {
+    titleLabel: @{
+        font: $font-02;
+    }
+    tintColor:$color-02;
+}
+
+UIView.edgeScreenWhite {
+    backgroundColor: $color-10;
+}
+
+UILabel.edgeScreenWhite {
+    backgroundColor: $color-10;
+    textColor: $color-01;
+    font: $font-02;
+}
+
+UIButton.edgeScreenWhite {
+    titleLabel: @{
+        font: $font-02;
+    }
+    tintColor:$color-02;
+}
+
+// Other
+
+UILabel.inventoryTabTitle.badge {
+    textColor: white;
+    font: $font-04;
+}
+
+^UIView.sort.pannel {
+    backgroundColor: $color-01;
+
+    UILabel {
+        textColor: $color-10;
+    }
+}
+
+UIButton.sort.button {
+    titleColor[state:normal]: $color-10;
+    titleColor[state:selected]: $color-02;
+    backgroundColor[state:normal]: clear;
+    backgroundColor[state:selected]: clear;
+    backgroundColor[state:highlighted]: clear;
+    titleLabel: @{
+        font: $font-03;
+    }
+}
+
